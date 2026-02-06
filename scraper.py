@@ -9,7 +9,7 @@ def run_scraper():
     
     try:
         response = requests.get(url)
-        soup = BeautifulSoup(response.text, 'html.parser')
+        soup = BeautifulSou(response.text, 'html.parser')
         titles = soup.find_all('span', class_='titleline')
 
         # Saving to CSV (Excel compatible)
